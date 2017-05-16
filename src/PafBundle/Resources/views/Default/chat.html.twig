@@ -1,0 +1,19 @@
+{% extends ('PafBundle::base.html.twig') %}
+{% block body %}
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+            <div class="col-md-6"> <img class="image " src="{{ asset('img/chat.jpg') }}"> </div>
+            <div class="col-md-6"> Hej Welcome {{ name }}</div>
+            <h1>CURRENT PAF LE CHAT </h1>
+            <div class="bottom">
+                {{ form_start(formChat, {'attr': {'class': 'form'}}) }}
+                {{ form_errors(formChat) }}
+                {{ form_errors(formChat.message) }}
+                {{ form_widget(formChat.message) }}
+                {{ form_widget(formChat.save) }}
+                {{ form_end(formChat) }}
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

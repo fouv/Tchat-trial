@@ -1,0 +1,16 @@
+{% extends ('PafBundle::base.html.twig') %}
+{% block body %}
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <h1>PAF LE CHAT</h1>
+            <div>
+                {{ form_start(formIndex, {'attr': {'class': 'form'}}) }}
+                {{ form_errors(formIndex) }}
+                {{ form_errors(formIndex.name) }}
+                {{ form_widget(formIndex.name) }}
+                {{ form_widget(formIndex.save) }}
+                {{ form_end(formIndex) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

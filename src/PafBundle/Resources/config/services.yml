@@ -1,0 +1,4 @@
+services:
+#    paf.example:
+#        class: PafBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

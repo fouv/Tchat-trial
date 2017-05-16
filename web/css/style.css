@@ -1,0 +1,13 @@
+.center-block {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+form input{
+    margin:5px;
+}
+.bottom {
+    padding-top: 500px;
+    text-align: center;
+
+}
